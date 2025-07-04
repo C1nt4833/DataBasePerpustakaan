@@ -32,14 +32,14 @@ INSERT INTO `anggota` (`id_anggota`, `nama`, `alamat`, `no_hp`) VALUES
 CREATE TABLE IF NOT EXISTS `buku` (
   `id_buku` int NOT NULL AUTO_INCREMENT,
   `judul` varchar(100) DEFAULT NULL,
-  `penerbut` varchar(100) DEFAULT NULL,
+  `penerbit` varchar(100) DEFAULT NULL,
   `tahun_terbit` year DEFAULT NULL,
   `stok` int DEFAULT NULL,
   PRIMARY KEY (`id_buku`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table perpustakaan_db.buku: ~2 rows (approximately)
-INSERT INTO `buku` (`id_buku`, `judul`, `penerbut`, `tahun_terbit`, `stok`) VALUES
+INSERT INTO `buku` (`id_buku`, `judul`, `penerbit`, `tahun_terbit`, `stok`) VALUES
 	(1, 'Laskar Pelangi', 'Bentang Pustaka', '2005', 10),
 	(2, 'Bumi', 'Gramedia', '2014', 5);
 
